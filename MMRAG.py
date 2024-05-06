@@ -15,7 +15,7 @@ from langchain.prompts import PromptTemplate
 from langchain.schema.output_parser import StrOutputParser
 from langchain_core.messages import AIMessage
 from langchain_core.runnables import RunnableLambda
-from langchain.chat_models import ChatOpenAI
+from langchain_community.chat_models import ChatOpenAI
 from langchain.embeddings import OpenAIEmbeddings
 import openai
 from unstructured.partition.pdf import partition_pdf
@@ -38,7 +38,6 @@ import re
 from IPython.display import HTML, display
 from langchain.schema.runnable import RunnableLambda, RunnablePassthrough
 from PIL import Image
-from langchain_community.chat_models import ChatOpenAI
 import base64
 from PIL import Image
 from io import BytesIO
