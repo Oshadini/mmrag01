@@ -30,14 +30,14 @@ from langchain.embeddings import VertexAIEmbeddings
 from langchain.retrievers.multi_vector import MultiVectorRetriever
 from langchain.schema.document import Document
 from langchain.storage import InMemoryStore
-from langchain.vectorstores import Chroma
+from langchain_community.vectorstores import Chroma
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 import io
 import re
 from IPython.display import HTML, display
 from langchain.schema.runnable import RunnableLambda, RunnablePassthrough
 from PIL import Image
-from langchain.chat_models import ChatOpenAI
+from langchain_community.chat_models import ChatOpenAI
 import base64
 from PIL import Image
 from io import BytesIO
