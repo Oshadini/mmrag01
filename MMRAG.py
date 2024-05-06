@@ -15,7 +15,7 @@ from langchain.prompts import PromptTemplate
 from langchain.schema.output_parser import StrOutputParser
 from langchain_core.messages import AIMessage
 from langchain_core.runnables import RunnableLambda
-from langchain_community.chat_models import ChatOpenAI
+#from langchain_community.chat_models import ChatOpenAI
 from langchain.embeddings import OpenAIEmbeddings
 import openai
 from unstructured.partition.pdf import partition_pdf
@@ -31,7 +31,7 @@ from langchain.embeddings import VertexAIEmbeddings
 from langchain.retrievers.multi_vector import MultiVectorRetriever
 from langchain.schema.document import Document
 from langchain.storage import InMemoryStore
-from langchain_community.vectorstores import Chroma
+#from langchain_community.vectorstores import Chroma
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 import io
 import re
@@ -45,6 +45,8 @@ from IPython.display import display, Markdown
 from IPython import display
 from IPython.display import HTML, display as ipy_display
 #from langchain_openai import OpenAIEmbeddings
+from langchain.vectorstores import Chroma
+from langchain.chat_models import ChatOpenAI
 
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_PROJECT"] = "multi_model_rag_mvr"
